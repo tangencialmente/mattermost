@@ -1,12 +1,17 @@
 name : End-to-End testing with tR
-#323123123
+#just testing stuff
 on:
   push:
-    branches: [tR-e2e-tests]
+    branches: main #[tR-e2e-tests]
   pull_request:
-    branches: [tR-e2e-tests]
+    branches: main #[tR-e2e-tests]
   workflow_dispatch:
 
 jobs:
   e2e-tests-tR:
-    runs-on: ubuntu-24.04  
+    runs-on: ubuntu-24.04
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Run a one-line script
+        run: Hello world! 
