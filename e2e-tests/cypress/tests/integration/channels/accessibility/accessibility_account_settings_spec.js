@@ -98,7 +98,7 @@ describe('Verify Accessibility Support in different sections in Settings and Pro
         });
         cy.uiClose();
 
-        // * Verify aria-label and tab support in section of Settings modal
+        // * Verify aria-label and tab support in section of Settings modals
         cy.uiOpenSettingsModal();
         cy.findByRole('tab', {name: 'notifications'}).should('be.visible').focus().should('be.focused');
         ['notifications', 'display', 'sidebar', 'advanced'].forEach((text) => {

@@ -1,0 +1,12 @@
+name : End-to-End testing with tR
+#323123123
+on:
+  push:
+    branches: [tR-e2e-tests]
+  pull_request:
+    branches: [tR-e2e-tests]
+  workflow_dispatch:
+
+jobs:
+  e2e-tests-tR:
+    runs-on: ubuntu-24.04  
